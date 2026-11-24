@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quicksum — Support / サポート</title>
+  <meta name="description" content="Quicksum Support, User Guide, and FAQ (Japanese & English).">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      var lang = localStorage.getItem('quicksum_lang') || ((navigator.language || 'ja').toLowerCase().indexOf('ja') === 0 ? 'ja' : 'en');
+      document.documentElement.classList.add('js-ready');
+      document.documentElement.setAttribute('data-active-lang', lang);
+      document.documentElement.lang = lang;
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">+/-</span>
+        <span class="brand-name">Quicksum</span>
+      </a>
+      <div class="header-controls">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">
+            <span data-lang="ja">概要</span>
+            <span data-lang="en">Overview</span>
+          </a>
+          <a href="support.html" aria-current="page">
+            <span data-lang="ja">サポート</span>
+            <span data-lang="en">Support</span>
+          </a>
+          <a href="privacy.html">
+            <span data-lang="ja">プライバシーポリシー</span>
+            <span data-lang="en">Privacy Policy</span>
+          </a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="ja" aria-pressed="true">日本語</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="doc-section" data-lang="ja">
+        <h1>Quicksum サポート</h1>
+        <p class="meta-date">対象バージョン: v1.0.0（iPhone / iPad）</p>
+
+        <h2>主な使い方</h2>
+        <ul>
+          <li><strong>付箋メモを作る:</strong> 電卓の表示部分を上のキャンバスへドラッグすると付箋メモとして配置できます。付箋をタップすると、入力欄への戻し、参照計算、リストへの追加、色変更（黄・青・赤・緑）が行えます。</li>
+          <li><strong>Safari やメモから取り込む:</strong> 数値を含むテキストを選択して iOS の「共有」から <strong>QuickSum</strong> を選ぶと、金額や数量を自動抽出してリストまたは付箋に追加できます。</li>
+          <li><strong>計算リストと率計算:</strong> 右上のリストボタンから集計リストを開き、税込・値引きなどの率を適用して履歴に保存したり、Markdown / CSV / テキスト形式でコピー・書き出しできます。</li>
+          <li><strong>ホーム画面ウィジェット:</strong> アクティブリストの合計と件数を表示し、1 タップで Quicksum を開けます。</li>
+        </ul>
+
+        <h2>よくある質問（FAQ）</h2>
+        <h3>機種変更やアプリ削除の前にデータを残すには？</h3>
+        <p>すべてのデータは端末内にのみ保存されます。移行やバックアップには、<strong>設定 &rarr;「JSON バックアップをコピー」</strong>でテキストを控えておき、新しい端末で<strong>「JSON から復元する」</strong>に貼り付けてください。</p>
+
+        <h3>削除した付箋メモを戻せますか？</h3>
+        <p>削除した付箋メモは<strong>設定 &rarr; ゴミ箱</strong>に 30 日間保管されており、1 タップで元のリストへ復元できます。</p>
+
+        <h3>再インストール時に再度課金されますか？</h3>
+        <p>いいえ。Quicksum は広告なしの買い切りアプリです。同じ Apple Account で App Store の購入履歴から追加費用なしで再ダウンロードできます。ファミリー共有にも対応しています。</p>
+
+        <h3>返金について</h3>
+        <p>購入後の返金手続きは、Apple の「問題を報告」ページ（<a href="https://reportaproblem.apple.com/" rel="noopener noreferrer">reportaproblem.apple.com</a>）からお手続きください。</p>
+
+        <h2>お問い合わせ</h2>
+        <div class="callout">
+          メール: <a href="mailto:contact@hildrstella.net">contact@hildrstella.net</a><br>
+          お問い合わせの際は、ご利用の機種名・iOS / iPadOS バージョン・Quicksum のバージョン（設定 &rarr; ライセンスとプライバシーで確認可能）をお知らせください。
+        </div>
+      </section>
+
+      <section class="doc-section" data-lang="en">
+        <h1>Quicksum Support</h1>
+        <p class="meta-date">Applies to v1.0.0 (iPhone &amp; iPad)</p>
+
+        <h2>Quick Guide</h2>
+        <ul>
+          <li><strong>Pin Sticky Memos:</strong> Drag the calculator display onto the canvas above to save a sticky memo. Tap any memo to insert its value back, create a linked formula reference, add it to the calculation list, or change its color.</li>
+          <li><strong>Capture from Safari &amp; Other Apps:</strong> Select text containing numbers and tap <strong>Share &rarr; QuickSum</strong> to extract candidates into your calculation list or memo canvas.</li>
+          <li><strong>Calculation List &amp; Exports:</strong> Tap the list icon in the top bar to apply tax/discount rates, save snapshots to History, and copy or export Markdown, CSV, or plain text files.</li>
+          <li><strong>Home Screen Widget:</strong> View your active list's total and count at a glance and launch Quicksum in one tap.</li>
+        </ul>
+
+        <h2>Frequently Asked Questions</h2>
+        <h3>How do I back up or transfer my data?</h3>
+        <p>Because Quicksum stores all data locally on your device, open <strong>Settings &rarr; Copy JSON Backup</strong> to save a backup, and paste it into <strong>Restore from JSON</strong> on another device.</p>
+
+        <h3>Can I recover a deleted sticky memo?</h3>
+        <p>Yes. Deleted memos are kept in <strong>Settings &rarr; Trash</strong> for 30 days and can be restored anytime.</p>
+
+        <h3>Do I have to pay again after reinstalling?</h3>
+        <p>No. Quicksum is a one-time purchase with no subscriptions or ads. Re-download anytime from your App Store Purchase History. Family Sharing is enabled.</p>
+
+        <h3>How do refunds work?</h3>
+        <p>All App Store purchases and refunds are handled by Apple at <a href="https://reportaproblem.apple.com/" rel="noopener noreferrer">reportaproblem.apple.com</a>.</p>
+
+        <h2>Contact Support</h2>
+        <div class="callout">
+          Email: <a href="mailto:contact@hildrstella.net">contact@hildrstella.net</a><br>
+          Please include your device model, iOS/iPadOS version, and Quicksum version (found in Settings &rarr; License &amp; Privacy).
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Takaomi Arai</span>
+      <span><a href="privacy.html">Privacy Policy</a> · <a href="index.html">Quicksum</a></span>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll('[data-set-lang]');
+      function applyLang(lang) {
+        document.documentElement.setAttribute('data-active-lang', lang);
+        document.documentElement.lang = lang;
+        localStorage.setItem('quicksum_lang', lang);
+        buttons.forEach(function (btn) {
+          btn.setAttribute('aria-pressed', btn.getAttribute('data-set-lang') === lang ? 'true' : 'false');
+        });
+      }
+      applyLang(document.documentElement.getAttribute('data-active-lang') || 'ja');
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          applyLang(btn.getAttribute('data-set-lang'));
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
